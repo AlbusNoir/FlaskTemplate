@@ -1,0 +1,12 @@
+# This is your compose file. 
+# This is where you define your services and such
+# Reference: https://docs.docker.com/compose/gettingstarted/
+services:
+  FlaskTemplate:
+    image: flasktemplate:latest
+    ports:
+      - "5000:5000"
+    container_name: flasktemplate
+    restart: unless-stopped
+
+# There is a ton more you can add here, this is just a very very basic compose file to get started with
